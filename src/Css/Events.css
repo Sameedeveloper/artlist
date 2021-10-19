@@ -1,0 +1,62 @@
+/*Override default bootstrap css*/
+
+/*Change event card properties*/
+
+.card {
+  width: 18.75rem !important;
+
+  background-color: rgb(255, 197, 5) !important;
+
+  color: #072a50 !important;
+  margin: 10px !important;
+  border: 2px solid black !important;
+  font-weight: 600;
+  max-height: 500px !important;
+}
+
+/*Display cards inline if possible*/
+
+span {
+  display: inline-block;
+}
+
+/*Event Section heading*/
+
+h1 {
+  background-color: #041f3a;
+  padding-top: 10px;
+  padding-bottom: 12px;
+}
+
+.card-text {
+  background-color: rgb(239, 214, 132);
+  letter-spacing: 1px;
+}
+
+/*Event section background*/
+
+.eventsBackground {
+  background-image: url(../Images/stockconcert.jpeg);
+  background-size: contain;
+}
+
+.card-title {
+  font-size: 2rem;
+}
+
+/* Ticket link animation */
+a {
+  color: #072a50;
+  animation-name: link;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+@keyframes link {
+  from {
+    color: #072a50;
+  }
+  to {
+    color: red;
+  }
+}

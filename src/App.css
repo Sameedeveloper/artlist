@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.App {
+  text-align: center;
+  background-color: #072a50;
+  min-height: 100vh;
+  padding-top: 40px;
+}
+
+.inputGroup {
+  padding: 10px 0 0 0;
+  margin-bottom: 13%;
+}
+
+input {
+  background-color: #072a50;
+  border-color: rgb(228, 176, 4);
+  font-weight: bolder;
+  color: rgb(228, 176, 4);
+  letter-spacing: 2px;
+  font-size: 20px;
+  border-width: 4px;
+  border-style: solid;
+  border-right-width: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+.moddedButton {
+  position: relative;
+  top: 18px;
+  height: 42px;
+  width: 42px;
+  border: solid 2px rgb(228, 176, 4);
+  background-color: #072a50;
+  padding: 2px;
+  padding-left: 4px;
+  border-width: 4px;
+
+  border-left-width: 0px;
+  border-top-width: 0px;
+}
+
+.moddedButton:hover {
+  background-color: rgb(255, 197, 5);
+}
+
+.form-control {
+  min-height: 40px;
+  min-width: 40%;
+}
+
+h1 {
+  color: rgb(228, 176, 4);
+  font-size: 410%;
+}
+
+.logo {
+  width: 50%;
+}
+.muzieknootjes {
+  display: block;
+  margin: auto;
+  position: relative;
+  width: 50%;
+  min-width: 300px;
+  height: 200px;
+  border: 0px solid #000;
+  color: rgb(228, 176, 4);
+}
+
+.noot-1,
+.noot-2,
+.noot-3,
+.noot-4 {
+  position: absolute;
+  animation: notes 2s infinite linear;
+  font-size: 35px;
+  opacity: 0;
+}
+
+.noot-1 {
+  top: 60px;
+  left: 0;
+  animation-delay: 0.5s;
+}
+
+.noot-2 {
+  top: 30px;
+  left: 30%;
+  animation-delay: 1s;
+}
+
+.noot-3 {
+  top: 90px;
+  left: 60%;
+  animation-delay: 1.5s;
+}
+
+.noot-4 {
+  top: 40px;
+  left: 90%;
+  animation-delay: 2s;
+}
+
+@keyframes notes {
+  0% {
+    transform: scale(1) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5) translate(50%, -50%);
+  }
+  80% {
+    opacity: 0;
+    transform: scale(1.5) translate(100%, -100%);
+  }
+  100% {
+    transform: scale(1.5) translate(100%, -100%);
+    opacity: 0;
+  }
+}
